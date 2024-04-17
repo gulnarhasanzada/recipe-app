@@ -1,11 +1,13 @@
 import React from 'react'
 import Navigation from '../navbar/Navigation'
+import Search from './Search'
 
 const Header = () => {
   return (
-    <header>
-      <Navigation />
-    </header>
+      <>
+        <Navigation />
+        <Search/>
+      </>
   )
 }
 

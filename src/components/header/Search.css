@@ -1,0 +1,38 @@
+
+
+.btn.btn-search{
+    background-color: var(--main-color);
+    color: #fff;
+    margin-left: 1rem;
+    padding: 1rem 3rem;
+}
+
+.btn.btn-search:hover{
+    background-color: var(--main-color);
+    opacity: 0.8;
+    color: #fff;
+}
+
+.input-search{
+    width: 40%;
+    padding: 1rem 3rem;
+}
+
+.input-search:focus{
+    border: 2px solid #000;
+    outline: none;
+    border-radius: 3px;
+}
+
+.input-search{
+    width: 40%;
+    padding: 1rem 3rem;
+}
+
+.select-search{
+    background-color: #fff;
+    border: 1px solid #979797;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

@@ -19,8 +19,7 @@ const Navigation = () => {
             <Link className='nav-item' to="/about">About</Link>
             <Link className='nav-item' to="/github">Github</Link>
             <Link className='nav-item' to="/contact">Contact</Link>
-            <Link className='nav-item' to="/logout">Logout</Link>
-            
+            <Link className='nav-item' to="/logout">Logout</Link>   
           </Nav>
         </Navbar.Collapse>
         </Row>
