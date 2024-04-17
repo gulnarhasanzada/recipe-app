@@ -2,5 +2,21 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+  --main-color: #FF642B;
 }
 
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--main-color);
+  text-decoration: none;
+  transition: 0.25s ease-in-out;
+}
