@@ -27,7 +27,7 @@
     padding: 1% 3%;
 }
 
-@media(max-width: 440px) {
+@media(max-width: 983px) {
     .input-search{
         width: 100%;
         margin-left: 0;
