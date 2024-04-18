@@ -3,7 +3,7 @@ import './Search.css'
 
 const Search = () => {
   return (
-    <div className='text-center py-5 d-flex flex-row justify-content-center'>
+    <div className='text-center py-5 search-container'>
       <input type='text' className='input-search' placeholder='Search..' onChange={()=>{}}/>
       <select name="category" className='select-search'>
         <option defaultValue>Category</option>
