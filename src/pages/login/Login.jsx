@@ -14,16 +14,12 @@ const Login = () => {
   const [error, setError] = useState('')
   const navigate = useNavigate();
 
-  if(user){
-    console.log(user)
-    navigate("/")
-  }
-
   const onChangeHandler = (e)=>{
     setFormData({...formData, [e.target.name]: e.target.value})
   }
 
-  const onSubmit = ()=>{
+  const onSubmit = (e)=>{
+    e.preventDefault();
     if(formData.email === 'test@test.com' && formData.password ==='test'){
       login(formData.email, formData.password)
       setError('')
