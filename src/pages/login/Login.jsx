@@ -31,7 +31,6 @@ const Login = () => {
       return;
     }
     setError('Wrong username or password!')
-    navigate("/login")
   }
 
   return (

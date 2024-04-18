@@ -3,6 +3,7 @@ import Header from './components/header/Header'
 import AppRouter from './router/AppRouter'
 import {Outlet} from 'react-router-dom'
 import { Col, Container, Row } from 'react-bootstrap';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           <AppRouter/>
           <Outlet />
         </Col>
+      </Row>
+      <Row>
+        <Footer />
       </Row>
     </Container>
   )

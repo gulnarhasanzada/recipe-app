@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import {Link} from 'react-router-dom'
 import './Navigation.css'
 import { useUserContext } from '../../context/UserContextProvider';
+import { FaUserCircle } from "react-icons/fa";
 
 const Navigation = () => {
   const {logout, user} = useUserContext();
@@ -19,12 +20,15 @@ const Navigation = () => {
             <Nav className="justify-content-center flex-grow-1 gap-5">
               <Link className='nav-item' to="/home">Home</Link>
               <Link className='nav-item' to="/about">About</Link>
-              <Link className='nav-item' to="/github">Github</Link>
+              <Link className='nav-item' to="https://github.com/gulnarhasanzada" target="_blank">Github</Link>
               <Link className='nav-item' to="/contact">Contact</Link>
               {user && <Link className='nav-item' onClick={logout}>Logout</Link>}
-              {!user && <Link className='nav-item' to="/login">Login</Link>}   
+              {!user && <Link className='nav-item' to="/login">Login</Link>}  
+              {user && <span><FaUserCircle className='icon'/> {user.email}</span>} 
             </Nav>
           </Navbar.Collapse>
+
+          
         </Row>
       </Container>
     </Navbar>
