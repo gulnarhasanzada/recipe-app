@@ -21,7 +21,7 @@
 
 .select-search{
     background-color: #fff;
-    border: 1px solid #979797;
+    border: 1px solid var(--border-color);
     margin-left: 1rem;
     margin-top: 1%;
     padding: 1% 3%;

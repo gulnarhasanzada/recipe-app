@@ -13,18 +13,18 @@ const Navigation = () => {
         <Row className='container-fluid text-center py-3'>
             <Col><h1 className='logo'>Recipe App</h1></Col>
         </Row>
-        <Row className='container-fluid text-center border  py-3'> 
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="justify-content-center flex-grow-1 gap-5">
-            <Link className='nav-item' to="/home">Home</Link>
-            <Link className='nav-item' to="/about">About</Link>
-            <Link className='nav-item' to="/github">Github</Link>
-            <Link className='nav-item' to="/contact">Contact</Link>
-            {user && <Link className='nav-item' onClick={logout}>Logout</Link>}
-            {!user && <Link className='nav-item' to="/login">Login</Link>}   
-          </Nav>
-        </Navbar.Collapse>
+        <Row className='container-fluid text-center py-3 nav-container'> 
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="justify-content-center flex-grow-1 gap-5">
+              <Link className='nav-item' to="/home">Home</Link>
+              <Link className='nav-item' to="/about">About</Link>
+              <Link className='nav-item' to="/github">Github</Link>
+              <Link className='nav-item' to="/contact">Contact</Link>
+              {user && <Link className='nav-item' onClick={logout}>Logout</Link>}
+              {!user && <Link className='nav-item' to="/login">Login</Link>}   
+            </Nav>
+          </Navbar.Collapse>
         </Row>
       </Container>
     </Navbar>

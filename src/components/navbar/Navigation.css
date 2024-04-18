@@ -6,3 +6,8 @@
     font-size: 3.5rem;
     display: block;
   }
+
+  .nav-container{
+    border-bottom: 1px solid #000;  
+    border-top: 1px solid #000;  
+  }

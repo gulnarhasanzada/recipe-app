@@ -1,0 +1,57 @@
+.details-img{
+    width: 100%;
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.total{
+    padding: 0.5rem 2rem;
+    text-align: center;
+    width: 33%;
+}
+
+.border-right{
+    border-right: 1px solid var(--border-color);
+}
+
+.icon{
+    font-size: 1.5rem;
+    color: var(--main-color)
+}
+
+.total-label{
+    font-size: small;
+}
+
+.total-num{
+    color: var(--border-color);
+    font-size: small;
+    line-height: 0.5;
+}
+
+.recipe-label{
+    font-weight: 600;
+    font-size:xx-large;
+}
+
+.ingredients-label{
+    font-weight: 600;
+    font-size:medium;
+}
+
+.ingredient-item{
+    font-size: small;
+    color: var(--secondary-text-color);
+}
+
+.nutrient-item{
+    line-height: 1.5;
+    font-size: small;
+    color: var(--secondary-text-color);
+    padding: 10px !important;
+}
+
+.recipe-source{
+    color: var(--main-color);
+    font-size: small;
+    margin-bottom: 2rem;;
+}
