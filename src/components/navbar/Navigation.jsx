@@ -3,8 +3,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import {Link} from 'react-router-dom'
 import './Navigation.css'
+import { useUserContext } from '../../context/UserContextProvider';
 
 const Navigation = () => {
+  const {logout, user} = useUserContext();
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
       <Container fluid  className='d-flex flex-column  m-0 p-0'>
@@ -19,7 +21,8 @@ const Navigation = () => {
             <Link className='nav-item' to="/about">About</Link>
             <Link className='nav-item' to="/github">Github</Link>
             <Link className='nav-item' to="/contact">Contact</Link>
-            <Link className='nav-item' to="/logout">Logout</Link>   
+            {user && <Link className='nav-item' onClick={logout}>Logout</Link>}
+            {!user && <Link className='nav-item' to="/login">Login</Link>}   
           </Nav>
         </Navbar.Collapse>
         </Row>

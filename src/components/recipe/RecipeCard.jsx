@@ -21,7 +21,7 @@ const RecipeCard = ({recipe}) => {
         <Card.Text>
           <p className='author'>{source}</p>
         </Card.Text>
-        <button className="btn btn-details" onClick={()=>goToDetails(recipe)}>Details</button>
+        <button className="btn btn-main" onClick={()=>goToDetails(recipe)}>Details</button>
       </Card.Body>
     </Card>
   )

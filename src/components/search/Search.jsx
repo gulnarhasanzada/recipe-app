@@ -6,7 +6,7 @@ const Search = () => {
   const {selectMealType, updateSearch, fetchRecipes} = useRecipeContext();
   return (
     <div className='text-center py-5 search-container'>
-      <input type='text' className='input-search' placeholder='Search..' onChange={(e)=>updateSearch(e.target.value)}/>
+      <input type='text' className='input-field input-search' placeholder='Search..' onChange={(e)=>updateSearch(e.target.value)}/>
       <select name="category" className='select-search' onChange={(e)=>selectMealType(e.target.value)}>
         <option value="breakfast" defaultValue>Breakfast</option>
         <option value="lunch">Lunch</option>
