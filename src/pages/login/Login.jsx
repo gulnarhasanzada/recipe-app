@@ -35,12 +35,12 @@ const Login = () => {
       <Form md={6} className="p-4 d-flex flex-column " onSubmit={onSubmit}>
         <Form.Group className="mb-3" controlId="formPlaintextEmail">
           <Form.Label>Email</Form.Label>
-          <Form.Control type="text" placeholder="email@example.com"  className="input-field" name="email" onChange={onChangeHandler}/>
+          <Form.Control type="text" placeholder="Email: test@test.com"  className="input-field" name="email" onChange={onChangeHandler}/>
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formPlaintextPassword">
           <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" className="input-field" name="password" onChange={onChangeHandler}/>
+          <Form.Control type="password" placeholder="Password: test" className="input-field" name="password" onChange={onChangeHandler}/>
         </Form.Group>
 
         <Button type="submit" className="btn btn-main">

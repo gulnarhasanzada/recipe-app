@@ -8,5 +8,5 @@ import './index.css'
 import UserContextProvider from './context/UserContextProvider.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <BrowserRouter><UserContextProvider><RecipeContextProvider><App /></RecipeContextProvider></UserContextProvider></BrowserRouter>,
+    <UserContextProvider><RecipeContextProvider><BrowserRouter><App /></BrowserRouter></RecipeContextProvider></UserContextProvider>,
 )

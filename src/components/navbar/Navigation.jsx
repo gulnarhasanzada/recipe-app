@@ -18,7 +18,7 @@ const Navigation = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="justify-content-center flex-grow-1 gap-5">
-              <Link className='nav-item' to="/home">Home</Link>
+              <Link className='nav-item' to="/">Home</Link>
               <Link className='nav-item' to="/about">About</Link>
               <Link className='nav-item' to="https://github.com/gulnarhasanzada" target="_blank">Github</Link>
               <Link className='nav-item' to="/contact">Contact</Link>
