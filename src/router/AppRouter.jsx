@@ -6,13 +6,16 @@ import NotFound from "../pages/not-found/NotFound";
 import Details from "../pages/details/Details";
 import Login from "../pages/login/Login";
 import { useUserContext } from '../context/UserContextProvider';
+import PrivateRouter from './PrivateRouter'
 
 const AppRouter = () => {
   const { user } = useUserContext();
 
   return (
       <Routes>
-        <Route path="/" element={!user ? <Navigate to="/login" /> : <Home />} />
+        <Route index path="/" element={<PrivateRouter user={user}>
+                                        <Home />
+                                       </PrivateRouter>} />
         <Route path="/about" element={<About />} />
         <Route path="/details" element={<Details />} />
         <Route path="/login" element={<Login />}  />
